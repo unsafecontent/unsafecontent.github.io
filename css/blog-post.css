@@ -1,0 +1,18 @@
+/*!
+ * Start Bootstrap - Blog Post (https://startbootstrap.com/templates/blog-post)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-blog-post/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px; /* only original line was this */
+  /* font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif; */
+}
+
+.resource-links li {
+  padding-bottom: 18px;
+}
+
+.in-article li {
+  margin-bottom: 8px;
+}
+
