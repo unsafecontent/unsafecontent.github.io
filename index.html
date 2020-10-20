@@ -85,26 +85,68 @@
         <hr>
 
         <!-- Post Content -->
-        <p class="lead">Last night around 12 a.m., I was entrusted with a piece of confidential information from an old friend that shook me to my core. I knew in my heart this was not the sort of thing I could keep to myself, and I got the sense that my friend had confided in me precisely <em>because</em> he thought I'd spill the beans.</p>
-
+        <p class="lead">
+    I work in tech. Over the last few months, censorship efforts have ramped up to an alarming level and I'm beginning to worry
+    our industry is having a devastating effect on American democracy. The problem has
+    progressed rapidly from standard media bias and spin to overt efforts at controlling political discourse in our country, and I've
+    gotten a distinct sense that it's panic time.
+	</p>
         <p>
           The feeling is awful. Like being at the top of a ski slope you just aren't ready for.
         </p><p>
-          It's one of those details where, once you have it, so many other things make sense. Recently, I'd begun to feel like everyone in U.S. politics had simultaneously lost touch with reality except me. Like I was in that episode of <em>Black Mirror</em> where criminals are punished by "wiping" their memory each morning and allowing tourists to scare confused inmates by wearing Halloween masks and threatening them with chainsaws.
-        </p><p>
-          So it's 1 a.m. in California and I'm sweating bullets, feeling as confused and alone as the protagonist in a sci-fi thriller. Moments ago, I received a text from a friend I haven't spoken to in years. He works in the machine learning group at a Silicon Valley social media giant. (I don't want to be much more specific for fear of him being dragged into all this.) In fact, we used to work together &mdash; that's how we know each other &mdash; but, unlike me, his specialty is natural language processing. If you need someone to build an algorithm to understand text written by a human, he's your guy.
+          I'm going to share some insider details with you that, once you know them, contextualize recent events in a way that begins to make sense. 
+          Recently, 
+          I'd begun to feel like everyone in U.S. politics had simultaneously lost touch with reality except me. Like I was in that episode 
+          of <em>Black Mirror</em> where criminals are punished by "wiping" their memory each morning and allowing tourists to scare confused 
+          inmates by wearing Halloween masks and threatening them with chainsaws. Once you understand some of the industry details, you'll see
+          clearly what needs to change.
+        </p>
+        <h3 class="text-secondary" id="whoami">Who am I?</h3>
+        <p>
+          So it's 1 a.m. in California and I'm sweating bullets, feeling as confused and alone as the protagonist in a sci-fi thriller. I work 
+          in the tech industry, so I don't want to reveal too much about what and where for fear my career will be impacted. But, broadly, I have
+          worked 
+          in the machine learning groups at a number of major Silicon Valley giants. Much of my time has been spent attacking problems that 
+          arise naturally in social media, like natural language processing and image recognition. If you need 
+          someone to build an algorithm to understand text written by a human, I'm your guy, basically.
         </p><p>
           When you build a machine learning algorithm &mdash; what some folks call "AI" in this setting &mdash; you start with what they call <em>training data</em>. This data is fed to the algorithm so it can "learn" the task at hand. For example, if you want to train an AI to find pictures with nudity, your training data would be a bunch of pictures and a tag for each one regarding whether it contained nudity. Simple.
         </p><p>
           So if you're an AI expert, someone comes to you with some training data, and you figure out the best AI for that problem domain. Different things work better for different problems, of course. So it is crucial for the researcher to understand <em>how the training data was obtained</em>. Without this information, he's doing his job blind.
         </p><p>
-          Which brings me to my buddy. After years working in this group, he was assigned a project and his boss couldn't explain where they got the training data from, or what it even was. That's extremely weird. It makes the job much, much harder. I've heard of this with respect to big Wall Street firms who don't want any individual to know too much about their strategy… but at a social media company? Unheard of.
+          Which brings me to my work.  As you probably know, your Twitter or Facebook news feed isn't just a chronological list of what your
+          friends said and did; this is how it was at the beginning, but not anymore. That takes too much power away from the networks! Nowadays,
+          an algorithm (The Algorithm, writ large) determines what content to serve you by balancing a variety of different objectives: ensuring
+          your ongoing engagement, profiting off your attention, and creating virality. These are the factors that affect what you see: it has
+          precious little to do with what you'll actualy enjoy. You're a commodity to us.
         </p><p>
-          So I'll need to be a bit vague here, but long story short my buddy does some investigative work and figures out it's an obfuscated version of another data set but restricted down to <em>just</em> text involving tweets about the Hunter Biden email scandal.
+          So after years working in the AI space, as the election got closer, I began to hear more and more about project assignments 
+          involving politics-themed content where 
+          the boss would be cagey and vague about the end goal. These assignments were nearly always classification problems on text: AI meant to
+          understand human messages like social media comments.
+          Now it's not unheard of to build features specifically geared toward current events-type content, the sudden fascination specifically
+          with inferring ideology from speech seemed odd. But even weirder was the reluctance to give context around the problem statement. 
+          That's extremely weird! It makes the job much, much harder to not fully understand
+          the real-world problem being solved. I've heard of this with respect to big Wall Street firms who don't want any individual to know too much about their strategy… but at a social media company? Unheard of.
+        </p>
+        <h3 class="text-secondary" id="wrongthink">Social networks are using AI to filter out <em>wrongthink</em></h3>
+        <p>
+          So I'll need to be a bit vague here, but long story short, I did some investigating. My hypothesis, based on the strange circumstances
+          I outlined above, was that the networks wanted to be able to detect whether a particular comment related to this Hunter Biden email scandal
+          was <em>positive</em> or  <em>negative</em> with regard to Joe Biden. The reason I figured this might be the case is simply that the networks
+          cannot censor the story entirely &mdash; it's both obvious and impractical. But what better trick than to simply give the <em>illusion</em>
+          of fairness, all while giving you an extra dose of <em>vote for Biden</em>? That seems like the best option from their perspective. And
+          what little I understood of the company's true intent made me think that was likely. It also explained the need to censor it entirely for a few
+          hours while the engineers got a 911 fix in.
         </p><p>
-          It seemed from what he could see that he was being asked to predict whether a given text description was talking positively or negatively about Joe Biden in the context of the Hunter Biden email scandal. And that really freaked him out. He began telling me about another data set that he'd worked on, ostensibly to build a "conservative detector" model. He assumed it was just for tailoring content to individual tastes, but now believes its purpose was likely as pernicious as whatever this new assignment was all about.
+          Well, it's easy to test. I went on one of my social accounts and began furiously typing out comments that discussed the Hunter Biden emails
+          &mdash; without profanity or reason to alarm anyone &mdash; always with a negative view of the Democratic candidate. I was some 15 comments in
+          when suddenly a screen popped up saying my account was suspended for nefarious activity that violated TOS. Obviously I did no such thing.
+          Obviously I triggered something with my anti-Biden comments. And incredibly, this was no ordinary suspension: this was a one-week marathon suspension,
+          longer than anything I've heard of before.
          </p>
-        <p id="overview">
+        <h3 class="text-secondary" id="overview">Overview of the Biden corruption scandal</h3>
+        <p>
           The Hunter Biden email scandal is indisputably one of the most consequential corruption investigations of all time. Just weeks before an election, the New York <em>Post</em> exposes a trove of evidence  demonstrating conclusively that:
         </p>
         <ol class="in-article">
@@ -116,10 +158,13 @@
 
         <p>
           Until recently, this was all based on the word of a tipster who purportedly came into possession of Hunter Biden's laptop &mdash; and, while it would take a lot of effort to fake the many pictures and emails released, it was still conceivably possible that the material wasn't genuine.
-        </p><p id="validated">
-
-But then Fox News was able to validate the emails are real by contacting some of the other recipients on them. They reported this on air &mdash; so if they were wrong, the Biden campaign would have a lawsuit against Fox News, one that would among other things force them to stop reporting on it. That, of course, hasn't happened. And now, days have gone by, and Joe Biden's campaign hasn't even tried to deny the veracity of the emails. Indeed, the campaign essentially admitted that they were genuine and that the meetings they discuss did in fact happen.
-        </p><p id="coverup">
+        </p>
+        <h3 class="text-secondary" id="validated">Has it been confirmed to be real?</h3>
+        <p>
+          But then Fox News was able to validate the emails are real by contacting some of the other recipients on them. They reported this on air &mdash; so if they were wrong, the Biden campaign would have a lawsuit against Fox News, one that would among other things force them to stop reporting on it. That, of course, hasn't happened. And now, days have gone by, and Joe Biden's campaign hasn't even tried to deny the veracity of the emails. Indeed, the campaign essentially admitted that they were genuine and that the meetings they discuss did in fact happen.
+        </p>
+        <h3 class="text-secondary" id="coverup">The coordinated media blackout and cover-up</h3>
+        <p>
 
 But that's not the scary part &mdash; politicians have been corrupt forever. The scary part is what happened next &mdash; a coordinated blackout between social media and mainstream media.
         </p><p>
@@ -128,15 +173,22 @@ First, Facebook "limited circulation" of the bombshell article. Twitter suspende
         </p><p>
 
 Then, days went by, and there was little-to-no mainstream reporting anywhere except Fox News, except of course for dismissive hot takes that lob the vague "Russian disinformation" accusation at everything we've mentioned.
+Richer still, a list of 50 former intelligence community members signed a letter indicating that the emails had "all the hallmarks of Russian disinformation"
+&mdash; a clever ploy seemingly designed to avoid the most immediate question of whether the emails are real or not.
+After all, who cares what hallmarks the emails have as long as they're real? Even the Biden team isn't disputing they're real. For that reason, 
+anybody who invests the 
+effort to sign a letter like this before taking the time to even <em>ask</em>  Joe Biden whether he's crooked has no credibility in my mind.
         </p><p>
-
 And while numerous sources have confirmed that these emails are real and are definitely not "disinformation," this Orwellian struggle to deny reality continues unabated.
         </p><p>
 <strong>I repeat: there have been zero simple, factual articles on this in the mainstream media. And it is censored on social media.</strong>
-        </p><p>
+        </p>
+        <h3 class="text-secondary" id="impeachment">Was impeachment a cover-up, too?</h3>
+        <p>
 
-I knew those industries "leaned" toward the Democrats' side, but I thought we all had enough fundamental respect for the system of democracy that we knew better than this. It's disgusting to see grown adults fight over who gets to run a country none of them created, but even more heinous to see people subverting the very system that gave them this great country to run in the first place in the name of gaining power for a few years. It's like they're okay with destroying America if they get to be in power for four years and they don't think through what happens after. Makes no sense.
-        </p><p id="impeachment">
+I knew those industries "leaned" toward the Democrats' side, but I thought we all had enough fundamental respect for the system of democracy that we knew better than this. It's disgusting to see grown adults fight over who gets to run a country none of them created, but even more heinous to see people subverting the very system that gave them this great country to run in the first place in the name of gaining power for a few years. It's like 
+the 2020 Democrats are suddenly okay with destroying America if they get to be in power for four years, and they don't think through what happens after. Makes no sense.
+        </p><p>
 
 Imagine if a trove of emails was discovered demonstrating the Trump family had sold their influence for cash in a scheme like this. Can you possibly <em>imagine</em> the media just skipping it? This would be headline news for <em>months</em> and rightly so. The House impeached Donald Trump over simply inquiring about Biden's activities on a recorded phone call with Ukraine whose transcript was made public &mdash; and now we find out that the Bidens have been knee-deep in Ukrainian corruption for decades, but media interest has evaporated?
         </p><p>
@@ -151,15 +203,23 @@ And while I understand how disappointing that is, we all need to see what's goin
         </p><p>
 
 What I most admire about Americans is our adherence to principle; dedication to the principles of free speech and democracy do overwhelm  individual political affiliations and beliefs for many people. They care more about preserving our freedoms for the next generation than they do about having their way on political matters like tax plans and immigration details. But for others, America has become a frighteningly partisan place, where all questions are viewed in a partisan light.
+        </p>
+        <h3  id="social" class="text-secondary">The deployment of AI for political ends</h3>
+        <p>
+          This may be the first case in American history where AI has effectively been weaponized by the private sector for use against the 
+          people in order to achieve political ends. Certainly it raises many new questions about ethics in computing that will no doubt be
+          debated for generations. By using AI to curate what information we consume based on <em>their</em> objectives, not ours, the tech
+          giants have made us unwitting participants in the most expansive global brainwashing effort ever undertaken.
         </p><p>
-
-Which brings me to my buddy. He believes social networks are using models like the ones he has built to create echo chambers that specifically amplify messages beneficial to the Democrats' side. So there are many people on social media who &mdash; all day &mdash; see nothing but "news" (real or fake, who knows) that confirms every horrible suspicion about Trump and alleviates any concerns about Biden.
+Which brings me to my work. I believe social networks are using models like the ones I have built to create echo chambers that specifically 
+amplify messages beneficial to the Democrats' side. So there are many people on social media who &mdash; all day &mdash; see nothing but 
+"news" (real or fake, who knows) that confirms every horrible suspicion about Trump and alleviates any concerns about Biden.
         </p><p>
 
 We cannot judge these people &mdash; the evil is in manipulating, not being manipulated. That said, we must get through to them before November 3.
         </p><p>
 
-You see, it's not link-blocking that's the evil part of social media &mdash; it's that these social networks define what goes on your news feed, and they're manipulating what you see so they can manipulate what you think. In this case, they have been manipulating what you think about politics using my buddy's algorithms. This cannot be allowed to go on.
+You see, it's not link-blocking that's the evil part of social media &mdash; it's that these social networks define what goes on your news feed, and they're manipulating what you see so they can manipulate what you think. In this case, they have been manipulating what you think about politics using my machine learning models. This cannot be allowed to go on.
         </p><p>
 
 And so, I &mdash; a man who would never have considered voting for Donald Trump before &mdash; know that I need to. We need to send a message to the Democratic Party or they'll never reform, and we'll just be in this same position next election, deciding between a Republican (who may or may not  be a good candidate) and a corrupt-to-the-core Democrat. We can't reward this kind of behavior or it'll happen again.
@@ -252,19 +312,25 @@ Choose wisely. The country depends on it.
               <div class="col-lg-12">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="#overview">Overview</a>
+                    <a href="#whoami">Who am I?</a>
+                  </li>
+                  <li>
+                    <a href="#wrongthink">Social networks are using AI to filter out <em>wrongthink</em></a>
+                  </li>
+                  <li>
+                    <a href="#overview">Overview of the Biden corruption scandal</a>
                   </li>
                   <li>
                     <a href="#validated">Is it confirmed to be real?</a>
                   </li>
                   <li>
-                    <a href="#coverup">What was the big cover-up?</a>
-                  </li>
-                  <li>
-                    <a href="#coverup">Was impeachment a cover-up, too?</a>
+                    <a href="#coverup">The coordinated media blackout and cover-up</a>
                   </li>
                   <li>
                     <a href="#impeachment">Was impeachment a cover-up, too?</a>
+                  </li>
+                  <li>
+                    <a href="#social">The deployment of AI for political ends</a>
                   </li>
                 </ul>
               </div>
